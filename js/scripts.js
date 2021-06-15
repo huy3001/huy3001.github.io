@@ -64,6 +64,11 @@
         $(this).removeClass("floating-label-form-group-with-focus");
       });
     });
+
+    // Get current year and set to copyright
+    var date = new Date(),
+        year = date.getFullYear();
+    $('.copyright .pre-wrap').text('Copyright © ' + year);
   
   })(jQuery); // End of use strict
   
